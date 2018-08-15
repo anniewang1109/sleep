@@ -1,0 +1,43 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+a{
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.nav_bar{
+  display: flex;
+  flex-direction: row;
+  background-color: orange;
+  height: fit-content;
+  justify-content: space-evenly;
+}
+
+.item{
+  padding: 8px;
+  background-color: orange;
+  font-style: bold;
+  font-size: 20px;
+}
+
+.item:hover{
+  background-color: black;
+}
+
+#logo{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+  background-color: yellow;
+  width: 100px;
+  height:100px;
+}
+
+#menu{
+  margin-top: 50px;
+}
