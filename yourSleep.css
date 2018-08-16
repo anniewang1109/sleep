@@ -10,7 +10,7 @@ a{
   color: white;
 }
 
-.nav_bar{
+.navBar{
   display: flex;
   flex-direction: row;
   background-color: orange;
