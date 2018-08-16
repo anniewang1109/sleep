@@ -29,19 +29,6 @@ a{
   background-color: black;
 }
 
-/* select{
-  width: 100px;
-  height: 100px;
-  border: none;
-} */
-
-/* option{
-  width: 50px;
-  height: 50px;
-  border-style: solid;
-  border-color: black;
-} */
-
 #header_logo{
   display: block;
   width: 100%;
@@ -58,7 +45,7 @@ a{
 #answerInfoContainer{
   background-color:blue;
   height:50px;
-  
+
 }
 
 #answer{

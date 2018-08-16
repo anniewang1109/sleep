@@ -29,10 +29,15 @@ a{
   background-color: black;
 }
 
-#header_logo{
+#logo{
   display: block;
   width: 100%;
   height: 20px;
   background-color: yellow;
   height: fit-content;
+}
+
+#top{
+    text-align: center;
+
 }
