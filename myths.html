@@ -6,17 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="yourSleep.css">
+    <link rel="stylesheet" href="myths.css">
 
-    <script src="yourSleep.js"></script>
   </head>
   <body>
 
     <div class="header">
       <div id="header_logo">
-        <h1>Insert Logo</h1>
+        <h1 id="headerr">Insert Logo</h1>
       </div>
-      <div class="navBar" class="">
+      <div class="navBar">
           <a href ="vr.html" class="item">VR Experience</a>
           <a href="myths.html" class="item">Myths</a>
           <a href ="yourSleep.html" class="item">Personalized Sleep</a>
@@ -25,9 +24,24 @@
       </div>
     </div>
     <h1>Sleep Myths</h1>
-    <form>
-      
+    <form name="myths">
+      <p id="question">Myth 1</p>
+      <select size="2">
+        <input id="true" type="radio" name= "q" value = "true">True
+        <br>
+        <input id="false" type="radio" name="q" value = "false">False
+        <br>
+      </select>
+      <input id="submitButton" type="button" form="myths" value = "Submit">
+      <input id="nextButton" type="button" form="myths" value = "Next">
+
     </form>
+    <br>
+    <div id="answerContainer">
+    </div>
+    <div id="answerInfoContainer">
+    </div>
+    <script src="myths.js"></script>
 
   </body>
 </html>
