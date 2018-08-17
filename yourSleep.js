@@ -77,7 +77,7 @@ function q1Result(){
 }
 
 function q2Result(){
-    var q2Message = `<p>To sleep well avoid:<br>- watching TV<br>- sleeping with lights on</p> `
+    var q2Message = `<p>To sleep well avoid:<br>- watching TV<br>- sleeping with lights on<br>- intaking caffeine before you sleep<br>- minimize noise and light in your room</p> `
     result.push(q2Message)
 }
 

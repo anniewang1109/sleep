@@ -98,7 +98,9 @@ h1{
 }
 
 #resultMessage{
-    margin-top: 10px;
+    /* margin-top: 10px; */
     margin-bottom: 10px;
     font-size:20px;
+    background-color: #eeddbb;
+    padding: 20px;
 }
