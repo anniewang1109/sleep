@@ -13,7 +13,6 @@ a{
 h1{
     text-align: center;
     color: white;
-    padding-top: 45px;
 }
 
 form{
@@ -26,6 +25,7 @@ form{
 .title{
     height: 100px;
     background-color: yellow;
+    padding-top: 45px;
 }
 
 .navBar{

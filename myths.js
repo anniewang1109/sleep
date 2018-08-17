@@ -11,6 +11,7 @@ var nextButton = document.querySelector("[value*= 'Next']");
 
 
 var qNum = 0;
+question.innerHTML = mythsArr[qNum]
 
 if (qNum < mythsArr.length){
   console.log(qNum)
