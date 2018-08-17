@@ -36,7 +36,7 @@ function submit(qNum){
   answerContainer.append(answer)
   var answerInfo = document.createElement("p");
   answerInfo.setAttribute("id", "answerInfo")
-  answerInfoContainer.append(answerInfo)
+  answerContainer.append(answerInfo)
   //show the answer and answer info
   if (qValue == answerArr[qNum]){
     answer.innerHTML = "You are correct: " + answerArr[qNum];
