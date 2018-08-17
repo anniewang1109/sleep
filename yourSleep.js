@@ -23,10 +23,10 @@ function build(){
         for (choice in currentQ.choices){
             // console.log(currentQ.choices[choice])
             if (questionNum == 2){
-                answerArr.push(`<input class="choice" type= "checkbox" name="q${questionNum}" value = "${choice}"> ${currentQ.choices[choice]}`)
+                answerArr.push(`<input class="choice" type= "checkbox" name="q${questionNum}" value = "${choice}"> ${currentQ.choices[choice]}<br>`)
                 console.log(answerArr)
             }else{
-                answerArr.push(`<input class="choice" type= "radio" name="q${questionNum}" value = "${choice}"> ${currentQ.choices[choice]}`)
+                answerArr.push(`<input class="choice" type= "radio" name="q${questionNum}" value = "${choice}"> ${currentQ.choices[choice]}<br>`)
             }
         }
         console.log(questionNum)

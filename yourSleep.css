@@ -25,13 +25,6 @@ p{
     padding: 5px;
 }
 
-/* form{
-    background-color: white;
-    border-top-right-radius: 1em;
-    border-top-left-radius: 1em;
-    padding: 20px;
-} */
-
 .title{
     height: 100px;
     background-color: yellow;
@@ -58,9 +51,53 @@ p{
   background-color: black;
 }
 
+.content{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.question{
+    font-size: 20px;
+}
+
 #instruction{
     background-color: red;
     padding: 10px;
     text-align: center;
     color: white;
+}
+
+#quizContainter{
+    font-size: 20px;
+    line-height: 2;
+}
+
+.button {
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+    transition-duration: 1s;
+}
+
+#submitButton {
+    display: block;
+    background: rgb(232,185,44);
+    font-weight: bold;
+    width: 100px;
+    padding: 10px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#submitButton:hover{
+    background: rgb(252,69,40);
+}
+
+#resultMessage{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size:20px;
 }
