@@ -58,14 +58,17 @@ function submit(qNum){
   }else{
     answer.innerHTML = "Select an answer!"
   }
+  if (qNum == mythsArr.length - 1){
+    answerInfo.remove();
+  }
 
 }
 
 function next(qNum){
   console.log(qNum)
   if (qNum == mythsArr.length - 1){
-    console.log("no more questions");
     document.querySelector("#nextButton").remove();
+
   }
   //shows next question
   question.innerHTML = mythsArr[qNum]
