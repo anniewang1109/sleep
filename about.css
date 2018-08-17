@@ -10,12 +10,16 @@ a{
   color: white;
 }
 
+p{
+  color: white;
+  padding: 5px;
+}
 h1{
     text-align: center;
     background-color:  #bbccaa;
     color: white;
     font-size: 40px;
-    padding: 30px 30px;
+    padding: 10px;
     margin-left: 25px;
     margin-right: 25px;
 }
@@ -57,17 +61,17 @@ h1{
 .section{
     height: 410px;
     width: 300px;
-    background-color: blue;
+    background-color: #669988;
     padding: 40px;
 }
 
 .info{
-    background-color: yellow;
+    /* background-color: yellow; */
     padding: 15px;
 }
 
 #acknowledgement{
-    background-color: green;
+    background-color: #669988;
     text-align: center;
     padding: 10px;
 }
