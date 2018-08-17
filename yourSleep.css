@@ -12,64 +12,64 @@ a{
 
 h1{
     text-align: center;
+    background-color:  #bbccaa;
     color: white;
-
-}
-
-h2{
-    font-size: 30px;
-    padding: 10px;
-}
-
-p{
-    padding: 5px;
+    font-size: 40px;
+    padding: 30px 30px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .title{
     height: 100px;
-    background-color: yellow;
-    padding-top: 45px;
-
+    background-color: #669988;
+    padding-top: 25px;
+    padding-bottom: 35px;
 }
 
 .navBar{
   display: flex;
   flex-direction: row;
-  background-color: orange;
+  background-color: #99bbaa;
   height: fit-content;
   justify-content: space-evenly;
 }
 
 .item{
   padding: 8px;
-  background-color: orange;
+  background-color: #99bbaa;
   font-style: bold;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .item:hover{
-    background-color: #b88700;
+  background-color: #eeddbb;
+  color: #337777;
 }
 
 .content{
     margin-right: 100px;
     margin-left: 100px;
+
 }
 
 .question{
     font-size: 20px;
 }
 
-#instruction{
+/* #instruction{
     background-color: red;
     padding: 10px;
     text-align: center;
     color: white;
-}
+} */
 
 #quizContainter{
     font-size: 20px;
     line-height: 2;
+    background-color: #eeddbb;
+    padding: 30px;
+    color: #669988;
 }
 
 .button {
@@ -81,7 +81,7 @@ p{
 
 #submitButton {
     display: block;
-    background: rgb(232,185,44);
+    background: #669988;
     font-weight: bold;
     width: 100px;
     padding: 10px;
@@ -93,7 +93,8 @@ p{
 }
 
 #submitButton:hover{
-    background: rgb(252,69,40);
+  background-color: #eeddbb;
+  color: #337777;
 }
 
 #resultMessage{

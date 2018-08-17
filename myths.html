@@ -26,12 +26,16 @@
     <div id="content">
         <form name="myths">
           <p id="question"></p>
-          <input id="true" type="radio" name= "q" value = "true">True
-          <br>
-          <input id="false" type="radio" name="q" value = "false">False
-          <br>
-          <input id="submitButton" type="button" form="myths" value = "Submit">
-          <input id="nextButton" type="button" form="myths" value = "Next">
+          <div id="choices">
+            <input id="true" type="radio" name= "q" value = "true"> True
+            <br>
+            <input id="false" type="radio" name="q" value = "false"> False
+            <br>
+          </div>
+          <div id="buttons">
+            <input id="submitButton" class="button" type="button" form="myths" value = "Submit">
+            <input id="nextButton" class="button" type="button" form="myths" value = "Next">
+          </div>
         </form>
         <div id="answerContainer"></div>
     </div>

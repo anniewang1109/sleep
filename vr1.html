@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script>
+    <script src="myfont.typeface.js"></script> -->
+    <script>
+      src="https://rawgit.com/ngokevin/aframe-animation-component/master/dist/aframe-animation-component.min.js"
+    </script>
+
+    <script>
+      AFRAME.registerComponent('gearvr-height-fix', {
+  dependencies: ['position'],
+
+  init: function () {
+    if (!AFRAME.utils.isGearVR()) { return; }
+    var position = this.el.getComputedAttribute('position');
+    position.y += 1;
+    this.el.setAttribute('position', position);
+
+  }
+});</script>
+  </head>
+
+  <body>
+
+    <a-scene>
+    <a-sound src="https://cdn.glitch.com/0c3e7612-0775-4b09-aa2f-121a86e35add%2FDebussy%20-%20Arabesque%20No_1%20and%20No_2.mp3?1534445989670" autoplay="false" position="0 2 5"></a-sound>
+
+
+      <a-sky src="https://cdn.glitch.com/0c3e7612-0775-4b09-aa2f-121a86e35add%2Factual%20photo.png?1534513705547"></a-sky>
+
+      <a-entity gearvr-height-fix>
+      <a-camera position = "0 0 10">
+           <a-cursor color = "black"></a-cursor>
+      </a-camera>
+      </a-entity>
+
+      <a-assets>
+                <a-asset-item id="font" src="https://cdn.aframe.io/fonts/Roboto-msdf.json"></a-asset-item>
+
+                <a-asset-item id="brainm" src="https://cdn.glitch.com/28252315-1215-4f5e-9cca-3d40ee676dbb%2FBrain.mtl?1534345583631"></a-asset-item>
+                <a-asset-item id="braino" src="https://cdn.glitch.com/28252315-1215-4f5e-9cca-3d40ee676dbb%2FBrain.obj?1534345586470"></a-asset-item>
+
+                <a-asset-item id="cloudm" src="https://cdn.glitch.com/28252315-1215-4f5e-9cca-3d40ee676dbb%2Fcloud.mtl?1534345562242"></a-asset-item>
+                <a-asset-item id="cloudo" src="https://cdn.glitch.com/28252315-1215-4f5e-9cca-3d40ee676dbb%2Fcloud.obj?1534345564989"></a-asset-item>
+
+                <a-asset-item id="heartm" src="https://cdn.glitch.com/0c3e7612-0775-4b09-aa2f-121a86e35add%2F1410%20Heart.mtl?1534358745476"></a-asset-item>
+                <a-asset-item id="hearto" src="https://cdn.glitch.com/0c3e7612-0775-4b09-aa2f-121a86e35add%2F1410%20Heart.obj?1534358745568"></a-asset-item>
+
+      </a-assets>
+
+<!--   scene 1     -->
+
+    <a-entity id = "scene1">
+            <a-box id = "changeScene" height = "0.25" width="0.35" color= "pink" position="0 -1 -3"> </a-box>
+<!--         <button type="button"
+        onclick="window.open('', '_self', ''); window.close();">Exit</button> -->
+<!-- text -->
+      <a-entity id = "textStuff">
+ <a-entity position="-3 4 -6" rotation scale visible>
+          <a-text text="value: What happens when you do not sleep enough?; position: 0 0 0; width: 7" ></a-text>
+      </a-entity>
+
+      <a-entity>
+          <a-entity position="2.5 2 -6" rotation scale visible>
+            <a-text text="value: Memory Issues; position: 2.5 2 -2; width: 4">
+<!--                <a-animation attribute="rotation" dur="17000" fill="forwards" to="0 360 0" repeat="indefinite"> </a-animation> -->
+            </a-text>
+          </a-entity>
+
+      <a-entity position="2.5 2.75 -7" rotation scale visible>
+          <a-text text="value: High Blood Pressure; position:2.5 2.75 0; width: 4">
+<!--              <a-animation attribute="rotation" dur="1700" fill="forwards" to="0 360 0" repeat="1"> </a-animation> -->
+          </a-text>
+      </a-entity>
+
+      <a-entity position="-1 3 -6" rotation scale visible>
+          <a-text text="value: I just woke up, so why do I feel tired?; position: 20 2 20; width: 4">
+<!--              <a-animation attribute="rotation" dur="17000" fill="forwards" to="0 360 0" repeat="indefinite"> </a-animation> -->
+          </a-text>
+      </a-entity>
+
+      <a-entity position="-4 0 -7" rotation scale visible>
+          <a-text text="value: Mood Changes; position: 20 2 20; width: 4">
+<!--              <a-animation attribute="rotation" dur="17000" fill="forwards" to="0 360 0" repeat="indefinite"> </a-animation> -->
+          </a-text>
+      </a-entity>
+
+      <a-entity position="-4 2.75 -6" rotation scale visible>
+          <a-text text="value: Greater Risk of Heart Disease; position: 20 2 20; width: 4">
+<!--              <a-animation attribute="rotation" dur="17000" fill="forwards" to="0 360 0" repeat="indefinite"> </a-animation> -->
+          </a-text>
+      </a-entity>
+
+      <a-entity position="-4 1 -8" rotation scale visible>
+          <a-text text="value: Ugh, why am I so stressed!?; position: 20 2 20; width: 4">
+<!--              <a-animation attribute="rotation" dur="17000" fill="forwards" to="0 360 0" repeat="indefinite"> </a-animation> -->
+          </a-text>
+      </a-entity>
+
+      <a-entity position="-0.5 2.25 -5.5" rotation scale visible>
+          <a-text text="value: Trouble with Thinking; position: 20 2 20; width: 4">
+<!--              <a-animation attribute="rotation" dur="17000" fill="forwards" to="0 360 0" repeat="indefinite"> </a-animation> -->
+          </a-text>
+      </a-entity>
+
+      <a-entity position="2.5 2.75 -7" rotation scale visible>
+          <a-text text="value: Greater Risk of Diabetes; position: 20 2 20; width: 4">
+<!--              <a-animation attribute="rotation" dur="17000" fill="forwards" to="0 360 0" repeat="indefinite"> </a-animation> -->
+          </a-text>
+      </a-entity>
+
+      <a-entity position="1.75 -1 -5.5" rotation scale visible>
+          <a-text text="value: I have been getting sick a lot recently!; position: 20 2 20; width: 4">
+<!--              <a-animation attribute="rotation" dur="17000" fill="forwards" to="0 360 0" repeat="indefinite"> </a-animation> -->
+          </a-text>
+      </a-entity>
+
+      <a-entity position="-3 -1 -6.5" rotation scale visible>
+          <a-text text="value: Low Level of Concentration; position: 20 2 20; width: 4">
+<!--              <a-animation attribute="rotation" dur="17000" fill="forwards" to="0 360 0" repeat="indefinite"> </a-animation> -->
+          </a-text>
+      </a-entity>
+
+      <a-entity position="-4 2.75 -7" rotation scale visible>
+          <a-text text="value: Poor Balance; position: 20 2 20; width: 4">
+<!--              <a-animation attribute="rotation" dur="17000" fill="forwards" to="0 360 0" repeat="indefinite"> </a-animation> -->
+          </a-text>
+      </a-entity>
+
+      <a-entity position="-1 0.75 -6" rotation scale visible>
+          <a-text text="value: I have been working out a lot, but I am gaining weight!; position: 20 2 20; width: 4">
+<!--              <a-animation attribute="rotation" dur="17000" fill="forwards" to="0 360 0" repeat="indefinite"> </a-animation> -->
+          </a-text>
+      </a-entity>
+
+      </a-entity>
+        </a-entity>
+
+<!--heart orbiting -->
+    <a-entity>
+        <a-entity position="0 0 0" rotation scale visible>
+          <a-entity obj-model="obj: #hearto; mtl: #heartm;" id = "heartOne" shadow="receive: true;" scale="0.08 0.08 0.08" position="-20 -9 20" rotation visible geometry>
+             <a-animation attribute="rotation" dur="6000" fill="forwards" to="0 0 0" repeat="indefinite"> </a-animation>
+          </a-entity>
+        </a-entity>
+
+            <a-animation attribute="rotation"
+               dur="60000"
+               fill="forwards"
+               to="0 360 0"
+               repeat="indefinite"></a-animation>
+    </a-entity>
+
+    <a-entity>
+         <a-entity position="0 0 0" rotation scale visible>
+           <a-entity obj-model="obj: #hearto; mtl: #heartm;" id = "heartTwo" shadow="receive: true;" scale="0.08 0.08 0.08`" position="20 -9 -20" rotation visible geometry>
+              <a-animation attribute="rotation" dur="6000" fill="forwards" to="0 0 0" repeat="indefinite"> </a-animation>
+           </a-entity>
+        </a-entity>
+
+            <a-animation attribute="rotation"
+               dur="60000"
+               fill="forwards"
+               to="0 360 0"
+               repeat="indefinite"></a-animation>
+    </a-entity>
+
+    <a-entity>
+         <a-entity position="0 0 0" rotation scale visible>
+           <a-entity obj-model="obj: #hearto; mtl: #heartm;" id = "heartThree" shadow="receive: true;" scale="0.08 0.08 0.08`" position="20 -9 20" rotation visible geometry>
+              <a-animation attribute="rotation" dur="6000" fill="forwards" to="0 0 0" repeat="indefinite"> </a-animation>
+          </a-entity>
+        </a-entity>
+
+            <a-animation attribute="rotation"
+               dur="60000"
+               fill="forwards"
+               to="0 360 0"
+               repeat="indefinite"></a-animation>
+    </a-entity>
+
+    <a-entity>
+         <a-entity position="0 0 0" rotation scale visible>
+           <a-entity obj-model="obj: #hearto; mtl: #heartm;" id = "heartFour" shadow="receive: true;" scale="0.08 0.08 0.08`" position="-20 -9 -20" rotation visible geometry>
+              <a-animation attribute="rotation" dur="6000" fill="forwards" to="0 0 0" repeat="indefinite"> </a-animation>
+          </a-entity>
+        </a-entity>
+
+            <a-animation attribute="rotation"
+               dur="60000"
+               fill="forwards"
+               to="0 360 0"
+               repeat="indefinite"></a-animation>
+    </a-entity>
+
+
+<!--     brain orbit   -->
+    <a-entity>
+         <a-entity position="0 0 0">
+            <a-entity obj-model="obj: #braino; mtl: #brainm;" shadow="receive: true;" scale="0.02 0.02 0.02" position="20 2 20" id="brainOne"></a-entity>
+           <a-animation attribute="rotation" dur="17000" fill="forwards" to="0 0 0" repeat="indefinite"> </a-animation>
+
+        </a-entity>
+
+            <a-animation attribute="rotation"
+               dur="70000"
+               fill="forwards"
+               to="0 360 0"
+               repeat="indefinite"></a-animation>
+    </a-entity>
+    <a-entity>
+         <a-entity position="0 0 0">
+            <a-entity obj-model="obj: #braino; mtl: #brainm;" shadow="receive: true;" scale="0.02 0.02 0.02" position="-20 2 20" id="brainTwo"></a-entity>
+           <a-animation attribute="rotation" dur="17000" fill="forwards" to="0 0 0" repeat="indefinite"> </a-animation>
+
+        </a-entity>
+
+            <a-animation attribute="rotation"
+               dur="70000.1"
+               fill="forwards"
+               to="0 360 0"
+               repeat="indefinite"></a-animation>
+    </a-entity>
+    <a-entity>
+         <a-entity position="0 0 0">
+            <a-entity obj-model="obj: #braino; mtl: #brainm;" shadow="receive: true;" scale="0.02 0.02 0.02" position="20 2 -20" id="brainThree"></a-entity>
+           <a-animation attribute="rotation" dur="17000" fill="forwards" to="0 0 0" repeat="indefinite"> </a-animation>
+
+        </a-entity>
+
+            <a-animation attribute="rotation"
+               dur="70000"
+               fill="forwards"
+               to="0 360 0"
+               repeat="indefinite"></a-animation>
+    </a-entity>
+    <a-entity>
+         <a-entity position="0 0 0">
+            <a-entity obj-model="obj: #braino; mtl: #brainm;" shadow="receive: true;" scale="0.02 0.02 0.02" position="-20 2 -20" id="brainFour"></a-entity>
+           <a-animation attribute="rotation" dur="17000" fill="forwards" to="0 0 0" repeat="indefinite"> </a-animation>
+
+        </a-entity>
+
+            <a-animation attribute="rotation"
+               dur="70000"
+               fill="backwardss"
+               to="0 360 0"
+               repeat="indefinite"></a-animation>
+    </a-entity>
+
+<!--       cloud orbit -->
+
+    <a-entity>
+         <a-entity position="0 0 0">
+            <a-entity obj-model="obj: #cloudo; mtl: #cloudm;" shadow="receive: true;" scale="2 2 2" position="20 -20 -20" id = "cloud"></a-entity>
+           <a-animation attribute="rotation" dur="6000" fill="forwards" to="0 0 0" repeat="indefinite"> </a-animation>
+        </a-entity>
+
+            <a-animation attribute="rotation"
+               dur="60000.1"
+               fill="backwards"
+               to="0 360 0"
+               repeat="indefinite"></a-animation>
+    </a-entity>
+
+    <a-entity>
+      <a-entity position="0 0 0">
+            <a-entity obj-model="obj: #cloudo; mtl: #cloudm;" shadow="receive: true;" scale="2 2 2" position="-20 -20 20" id="cloudTwo"></a-entity>
+           <a-animation attribute="rotation" dur="17000" fill="forwards" to="0 0 0" repeat="indefinite"> </a-animation>
+        </a-entity>
+
+            <a-animation attribute="rotation"
+               dur="60000.1"
+               fill="forwards"
+               to="0 360 0"
+               repeat="indefinite"></a-animation>
+    </a-entity>
+
+    <a-entity>
+         <a-entity position="0 0 0">
+            <a-entity obj-model="obj: #cloudo; mtl: #cloudm;" shadow="receive: true;" scale="2 2 2" position="-20 -20 -20" id = "cloudThree"></a-entity>
+           <a-animation attribute="rotation" dur="6000" fill="forwards" to="0 0 0" repeat="indefinite"> </a-animation>
+         </a-entity>
+
+            <a-animation attribute="rotation"
+               dur="60000.1"
+               fill="forwards"
+               to="0 360 0"
+               repeat="indefinite"></a-animation>
+    </a-entity>
+
+    <a-entity>
+    <a-entity position="0 0 0">
+            <a-entity obj-model="obj: #cloudo; mtl: #cloudm;" shadow="receive: true;" scale="2 2 2" position="20 -20 20" id="cloudFour"></a-entity>
+           <a-animation attribute="rotation" dur="9000" fill="forwards" to="0 0 0" repeat="indefinite"> </a-animation>
+        </a-entity>
+
+            <a-animation attribute="rotation"
+               dur="60000.1"
+               fill="forwards"
+               to="0 360 0"
+               repeat="indefinite"></a-animation>
+    </a-entity>
+</a-entity>
+
+
+<!--   scene 1 ends   -->
+
+
+</a-scene>
+
+    <script>
+      document.getElementById("changeScene").addEventListener("click", function(){
+        window.open("vr2.html", "_self")
+       });
+    </script>
+  </body>
+
+</html>

@@ -12,37 +12,37 @@ a{
 
 h1{
     text-align: center;
-    /* color: white; */
-}
-
-form{
-    background-color: white;
-    border-top-right-radius: 1em;
-    border-top-left-radius: 1em;
-    padding: 20px;
+    background-color:  #bbccaa;
+    color: white;
+    font-size: 40px;
+    padding: 30px 30px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .title{
     height: 100px;
-    background-color: yellow;
-    padding-top: 45px;
+    background-color: #669988;
+    padding-top: 25px;
+    padding-bottom: 35px;
 }
 
 .navBar{
   display: flex;
   flex-direction: row;
-  background-color: orange;
+  background-color: #99bbaa;
   height: fit-content;
   justify-content: space-evenly;
 }
 
 .item{
   padding: 8px;
-  background-color: orange;
+  background-color: #99bbaa;
   font-style: bold;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .item:hover{
-  background-color: #b88700;
+  background-color: #eeddbb;
+  color: #337777;
 }

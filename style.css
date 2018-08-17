@@ -5,7 +5,7 @@
 }
 
 body{
-  background-color: #fff400;
+  background-color: #bbccaa;
 
 }
 
@@ -82,7 +82,7 @@ a{
 }
 
 a:hover{
-    background-color:black ;
+    background-color: black ;
     border-radius: 1em;
     border-style: none;
     padding: 10px;

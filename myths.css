@@ -10,62 +10,106 @@ a{
   color: white;
 }
 
+body{
+  background-color: white;
+}
 h1{
     text-align: center;
+    background-color:  #bbccaa;
     color: white;
-}
-
-form{
-    background-color: white;
-    border-top-right-radius: 1em;
-    border-top-left-radius: 1em;
-    padding: 20px;
+    font-size: 40px;
+    padding: 30px 30px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .title{
     height: 100px;
-    background-color: yellow;
-    padding-top: 45px;
+    background-color: #669988;
+    padding-top: 25px;
+    padding-bottom: 35px;
 }
 
 .navBar{
   display: flex;
   flex-direction: row;
-  background-color: orange;
+  background-color: #99bbaa;
   height: fit-content;
   justify-content: space-evenly;
 }
 
 .item{
   padding: 8px;
-  background-color: orange;
+  background-color: #99bbaa;
   font-style: bold;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .item:hover{
-    background-color: #b88700;
+  background-color: #eeddbb;
+  color: #337777;
 }
 
 #content{
-    background-color: red;
-    margin-top: 20px;
     margin-left: 100px;
     margin-right:100px;
-    border-radius: 1em;
     padding: 30px;
+    display: block;
+    margin: auto;
 }
 #answerContainer{
-  background-color:yellow;
-  height:50px;
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 1em;
+  background-color: #eeddbb;
+  /* height:50px; */
+  padding: 10px 20px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
-#answer{
-  background-color: green;
+
+
+form{
+  background-color: #669988;
+  padding: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
-#answerInfo{
-  background-color: red;
+.button {
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+    transition-duration: 1s;
+    font-weight: bold;
+    width: 100px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #99bbaa;
+    margin-top: 10px;
+
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button:hover{
+  background-color: #eeddbb;
+  color: #337777;
+}
+
+#question{
+  font-size: 20px;
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+}
+
+
+#choices{
+  font-size: 20px;
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
