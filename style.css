@@ -8,21 +8,6 @@ body{
   background-color: #fff400;
 
 }
-/* a{
-  display: block;
-  text-decoration: none;
-  font-style: bold;
-  position: absolute;
-  background-color: rgb(250,217,92);
-  background-color: #ffdb00;
-  font-size: 20px;
-  width: fit-content;
-  padding: 9px;
-  color: black;
-  border-radius: 1em;
-  border: solid;
-  border-color: black;
-} */
 
 img {
     display: block;
@@ -92,8 +77,17 @@ a{
     text-align: center;
     text-decoration: none;
     font-size: 20px;
-    color: white;
+    color: black;
 
+}
+
+a:hover{
+    background-color:black ;
+    border-radius: 1em;
+    border-style: none;
+    padding: 10px;
+    transition-duration: .5s;
+    color: white;
 }
 
 #start{

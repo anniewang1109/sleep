@@ -12,7 +12,7 @@ a{
 
 h1{
     text-align: center;
-    color: white;
+    /* color: white; */
 }
 
 form{
@@ -44,28 +44,5 @@ form{
 }
 
 .item:hover{
-    background-color: #b88700;
-}
-
-#content{
-    background-color: red;
-    margin-top: 20px;
-    margin-left: 100px;
-    margin-right:100px;
-    border-radius: 1em;
-    padding: 30px;
-}
-#answerContainer{
-  background-color:yellow;
-  height:50px;
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 1em;
-}
-
-#answer{
-  background-color: green;
-}
-
-#answerInfo{
-  background-color: red;
+  background-color: #b88700;
 }
