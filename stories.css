@@ -10,6 +10,11 @@ a{
   color: white;
 }
 
+p{
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
 h1{
     text-align: center;
     background-color:  #bbccaa;
